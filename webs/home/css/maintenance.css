@@ -1,0 +1,211 @@
+/*Lets start with the cloud formation rather*/
+
+/*The container will also serve as the SKY*/
+
+@font-face {  
+  font-family: ROCK ;  
+  src: url("/font/ROCK.TTF") format("truetype");  
+} 
+
+*{ margin: 0; padding: 0;}
+
+body {
+	/*To hide the horizontal scroller appearing during the animation*/
+	background: url(../images/maintenance/bg_body.png) repeat-x center top;
+	
+	
+}
+
+#logo{
+background: url('../images/maintenance/logo.png') 0px 0px no-repeat;
+position: fixed;
+top: 25%;
+left: 50%;
+margin-top: -50px;
+margin-left: -100px;
+width: 99px;
+height: 81px;
+z-index:-1;
+
+}
+
+#content {
+position: fixed;
+top: 44%;
+left: 47%;
+margin-top: -50px;
+margin-left: -100px;
+z-index: -1;
+
+}
+
+#bottom {
+position: fixed;
+bottom:3%;
+left: 48%;
+margin-top: -50px;
+margin-left: -100px;
+font-family: ROCK;  
+font-size: 12px;
+ 
+}
+
+#bottom p {
+	margin-bottom:5px;
+}
+
+#bottom a {
+	text-decoration: none;
+	color: teal;
+}
+
+#copyright {
+font-size: 16px;
+}
+
+.clear{
+	clear:both;
+	margin-bottom: 10px;
+}
+
+#clouds{
+	padding: 100px 0;
+	
+}
+
+/*Time to finalise the cloud shape*/
+.cloud {
+	width: 200px; height: 60px;
+	background: #fff;
+	
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;
+	
+	position: relative; 
+}
+
+.cloud:before, .cloud:after {
+	content: '';
+	position: absolute; 
+	background: #fff;
+	width: 100px; height: 80px;
+	position: absolute; top: -15px; left: 10px;
+	
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+	width: 120px; height: 120px;
+	top: -55px; left: auto; right: 15px;
+}
+
+/*Time to animate*/
+.x1 {
+	opacity: 0.6;
+	
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+
+/*variable speed, opacity, and position of clouds for realistic effect*/
+.x2 {
+	left: 200px;
+	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+	opacity: 0.6; /*opacity proportional to the size*/
+	
+	/*Speed will also be proportional to the size and opacity*/
+	/*More the speed. Less the time in 's' = seconds*/
+	-webkit-animation: moveclouds 25s linear infinite;
+	-moz-animation: moveclouds 25s linear infinite;
+	-o-animation: moveclouds 25s linear infinite;
+}
+
+.x3 {
+	left: -250px; top: -200px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 50s linear infinite;
+	-moz-animation: moveclouds 50s linear infinite;
+	-o-animation: moveclouds 50s linear infinite;
+}
+
+.x4 {
+	left: 470px; top: -250px;
+	
+	-webkit-transform: scale(0.75);
+	-moz-transform: scale(0.75);
+	transform: scale(0.75);
+	opacity: 0.75; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 28s linear infinite;
+	-moz-animation: moveclouds 38s linear infinite;
+	-o-animation: moveclouds 28s linear infinite;
+}
+
+.x5 {
+	left: -150px; top: -150px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 70s linear infinite;
+	-moz-animation: moveclouds 70s linear infinite;
+	-o-animation: moveclouds 70s linear infinite;
+}
+
+
+.x6 {
+	left: 500px; top: -123px;
+	
+	-webkit-transform: scale(0.5);
+	-moz-transform: scale(0.5);
+	transform: scale(0.5);
+	
+	
+	-webkit-animation: moveclouds 20s linear infinite;
+	-moz-animation: moveclouds 20s linear infinite;
+	-o-animation: moveclouds 20s linear infinite;
+}
+
+.x7 {
+	left: 500px; top: -103px;
+	
+	webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+	opacity: 0.6; /*opacity proportional to the size*/
+	
+	-webkit-animation: moveclouds 60s linear infinite;
+	-moz-animation: moveclouds 60s linear infinite;
+	-o-animation: moveclouds 60s linear infinite;
+}
+
+@-webkit-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-moz-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+	0% {margin-left: 1000px;}
+	100% {margin-left: -1000px;}
+}
