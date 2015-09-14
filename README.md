@@ -1,4 +1,4 @@
-Nyimpen-App
+Nyimpen
 ===========
 
 Nyimpen is simple bookmarking site using CakePHP and Mongodb, this App using Ichikaway plugin for Mongodb datasource
@@ -18,3 +18,6 @@ Nyimpen is simple bookmarking site using CakePHP and Mongodb, this App using Ich
 <p><a href="https://github.com/ichikaway/cakephp-mongodb" target="_blank">Ichikaway/cakephp-mongo</a></p>
 <h2>More Info</h2>
 <p><a href="http://bela.jar.web.id"</a>Anjar Blog</p>
+
+
+<p>Happy Nyimpen</p>
