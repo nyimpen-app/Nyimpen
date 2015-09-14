@@ -4,7 +4,7 @@ Nyimpen-App
 Nyimpen is simple bookmarking site using CakePHP and Mongodb, this App using Ichikaway plugin for Mongodb datasource
 
 <h2>Requirement :</h2>
-<p>Apache Web Server with rewrite module enable</p>
+<p>Apache Web Server with rewrite module enable or Nginx</p>
 <p>Mongodb</p>
 <p>Mongo-php lib</p>
 <h2>Installation</h2>
