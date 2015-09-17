@@ -13,7 +13,7 @@ Nyimpen is simple bookmarking site using CakePHP 2.x and Mongodb, this App using
 <p>Create virutal host e.g: cms.nyimpen.local and pointing to /path/to/nyimpen-app/webs/cms directory.</p>
 <p>all css,js, image etc should be put in "webs" directory.</p>
 <h2>Author</h2>
-<p><a href="https://github.com/lasut" target="_blank">Anjar Febrianto</a></p>
+<p><a href="https://github.com/anxfeb" target="_blank">Anjar Febrianto</a></p>
 <h2>Reference</h2>
 <p><a href="https://github.com/ichikaway/cakephp-mongodb" target="_blank">Ichikaway/cakephp-mongo</a></p>
 <h2>More Info</h2>
